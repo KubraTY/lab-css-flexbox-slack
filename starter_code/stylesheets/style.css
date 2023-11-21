@@ -8,3 +8,358 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #540B51 ;
+    padding: 15px;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100vw;
+}
+.desktop-menu, .signIn{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+nav div:first-child img{
+    height: 30px ;
+}
+.nav-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+button{
+    background:transparent;
+    border:none;
+    color: inherit;
+}
+nav button img{
+    height: 15px;
+}
+
+header{
+    color: white;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.header > *{
+    margin-bottom: 20px;
+}
+.header-title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+.header p{
+    font-size:20px;
+}
+.header p span{
+    color:#ECB12F;
+}
+.signUp-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+}
+.signUp-btns button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.signUp-btns button{
+    background-color: #F3EAE2 ;
+    color:#540B51
+}
+.signUp-btns button:nth-child(2){
+    position: relative;
+}
+.signUp-btns button:hover{
+    background-color:#4285F4 ;
+    color: white;
+    transition: all ease .3s;
+}
+
+.signUp-btns button img{
+    position: absolute;
+    height: calc(100% - 10px);
+    background-color: #F3EAE2;
+    left: 5px;
+    top:5px;
+    border-radius: 10px;
+}
+
+.header-img{
+    padding: 0;
+    width: 100vw;
+}
+
+.header-img > img{
+    width: 100%;
+    object-fit: cover;
+}
+main{
+    width:100vw ;
+}
+.brands{
+    background-color:#F3EAE2 ;
+    padding: 60px 10px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.brands > div{
+    width: 100%;
+}
+.brands p{
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-size: 14px;
+ padding-bottom: 40px;
+
+}
+.brand-imgs{
+    display: flex;
+    column-gap: 15px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+}
+.brands img{
+    height: 40px;
+}
+
+.percentages{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 15px;
+    line-height: 1.4;
+}
+.percentages h3{
+    color:#540B51;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-bottom: 20px;
+}
+
+.percentages>p{
+padding-bottom: 20px;
+}
+.percentages ul {
+    font-weight: bold;
+    padding-inline: 60px;
+}
+.percentages p>span{
+    color: #540B51;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.percentages ul li>p:last-child{
+    padding-bottom: 40px;
+}
+
+.trial{
+    color: #F3EAE2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+.trial h3{
+    font-weight: bold;
+    font-size: 40px;
+    padding-block: 50px;
+}
+
+.trial button{
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    padding:15px 10px;
+    text-transform: uppercase;
+    border: solid 2px white;
+}
+.trial button:hover{
+    background-color: white;
+    color:#540B51;
+    transition: all ease .3s;
+}
+
+footer{
+    background-color: white;
+    width: 100vw;
+    padding-block: 50px;
+    margin-bottom: 200px;
+}
+footer>div{
+    padding-inline:15px;
+}
+.footer-menu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    color:  #454245;
+    font-weight: bold;
+}
+.footer-menu li:hover{
+    color:#2E71A6;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+}
+
+.copy-rights{
+    display: flex;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    }
+    .header{
+        background-image: url(../images/background-singup.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-inline:30px;
+    }
+    .header-title{
+        font-size: 80px;
+        text-align: left;
+    }
+    .header-img{
+        overflow: hidden;
+    }
+    .header-img > img{
+        width: inherit;
+    }
+    .header p{
+        padding-bottom: 30px;
+    }
+    .header button{
+        font-size: 24px;
+        padding: 20px;
+    }
+    .brands >div > p{
+        font-size: 24px;
+    }
+    .brand-imgs{
+        column-gap: 24px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .percentages > p{
+        font-size: 24px;
+    }
+    .percentages ul{
+        display: flex;
+    }
+    .trial {
+        padding-inline: 100px;
+    }
+    footer{
+        margin-bottom: 0;
+    }
+    .footer-menu{
+        flex-direction: row;
+    }
+    .social-media {
+        justify-content: flex-start;
+    }
+    .social-media i{
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .social-media > *+*{
+        margin-left: 40px;
+    }
+}
